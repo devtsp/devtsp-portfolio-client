@@ -1,0 +1,53 @@
+.container {
+  width: 300px;
+  height: fit-content;
+}
+
+.image_container {
+  width: 100%;
+  line-height: 2;
+  margin: 0 auto;
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+
+  &:hover {
+    transform: scale(102%);
+  }
+
+  img {
+    width: 100%;
+    border-radius: 0.8rem;
+    box-shadow: 0 0 30px -20px black;
+  }
+}
+
+.project_title {
+  margin: 5px 0;
+  font-size: 20px;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+
+  a {
+    color: rgba(0, 128, 128, 0.692);
+    text-decoration-thickness: 1px;
+    font-size: 20px;
+    transition: all 250ms ease-in-out;
+
+    &:hover {
+      color: teal !important;
+      text-shadow: 0 0 20px rgba(132, 216, 174, 0.733);
+    }
+
+    &:visited {
+      color: teal;
+    }
+  }
+
+  svg {
+    height: 16px;
+    transform: translateY(1px);
+  }
+}
