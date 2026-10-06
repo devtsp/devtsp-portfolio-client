@@ -14,9 +14,9 @@ const Projects = () => {
         (with effort, love and dedication, pre-AI era)
       </p>
       <ul>
-        {projects.map(project => (
+        {projects.map((project, i) => (
           <li key={project.title}>
-            <ProjectCard project={project}></ProjectCard>
+            <ProjectCard project={project} index={i} />
           </li>
         ))}
       </ul>

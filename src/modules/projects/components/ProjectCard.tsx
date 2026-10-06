@@ -1,34 +1,30 @@
-import { Fade } from 'react-slideshow-image';
-import 'react-slideshow-image/dist/styles.css';
-
 import styles from './ProjectCard.module.css';
 import type { Project } from '../constants';
 
-const ProjectCard = ({ project }: { project: Project }) => {
+const ProjectCard = ({
+  project,
+  index,
+}: {
+  project: Project;
+  index: number;
+}) => {
   return (
     <article className={styles.container}>
-      <div
-        className={styles.image_container}
-        onClick={() => window.open(project.site, '_blank')}
-      >
-        <Fade
-          autoplay={true}
-          duration={2000}
-          arrows={false}
-          pauseOnHover={false}
-        >
-          {project.previews.map((preview, i) => (
-            <div className="each-fade" key={i}>
-              <div className="image-container">
-                <img src={preview} alt={project.title} />
-              </div>
-            </div>
-          ))}
-        </Fade>
-      </div>
+      <span className={styles.number}>
+        {String(index + 1).padStart(2, '0')}
+      </span>
+      <h2>{project.title}</h2>
       <div className={styles.links}>
+        <a
+          className={styles.primary}
+          href={project.site}
+          target="_blank"
+          rel="noreferrer"
+        >
+          Live site ↗
+        </a>
         <a href={project.sourceCode} target="_blank" rel="noreferrer">
-          source code
+          Source code ↗
         </a>
       </div>
     </article>

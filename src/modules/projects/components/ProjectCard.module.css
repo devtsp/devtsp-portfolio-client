@@ -1,43 +1,87 @@
 .container {
-  width: 300px;
-  height: fit-content;
-}
-
-.image_container {
-  width: 100%;
-  line-height: 2;
-  margin: 0 auto;
-  cursor: pointer;
-  transition: all 300ms ease-in-out;
+  width: 320px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 14px 22px 16px;
+  text-align: left;
+  background: white;
+  border: 1px solid rgba(123, 108, 217, 0.2);
+  border-top: 3px solid teal;
+  border-radius: 6px;
+  box-shadow: 4px 4px 0 rgba(123, 108, 217, 0.08);
+  transition:
+    border-color 200ms ease,
+    box-shadow 200ms ease;
 
   &:hover {
-    transform: scale(102%);
+    border-color: rgba(123, 108, 217, 0.45);
+    border-top-color: teal;
+    box-shadow: 4px 4px 0 rgba(192, 121, 162, 0.25);
   }
 
-  img {
-    width: 100%;
-    border-radius: 0.8rem;
-    box-shadow: 0 0 30px -20px black;
+  h2 {
+    font-family: ui-monospace, Consolas, monospace;
+    font-size: 18px;
+    font-weight: 600;
+    color: #7b6cd9;
+    margin: 4px 0 14px;
+    text-transform: capitalize;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
+}
+
+.number {
+  font-family: ui-monospace, Consolas, monospace;
+  font-size: 13px;
+  font-weight: 600;
+  color: teal;
+  letter-spacing: 0.08em;
 }
 
 .links {
   display: flex;
-  justify-content: center;
+  gap: 10px;
+  margin-top: auto;
 
   a {
-    color: rgba(0, 128, 128, 0.692);
-    text-decoration-thickness: 1px;
-    font-size: 20px;
-    transition: all 250ms ease-in-out;
+    flex: 1;
+    text-align: center;
+    padding: 5px 10px;
+    white-space: nowrap;
+    border: 1.5px solid #7b6cd9;
+    border-radius: 4px;
+    color: #7b6cd9;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    transition:
+      background 150ms ease,
+      color 150ms ease,
+      border-color 150ms ease;
 
     &:hover {
-      color: teal !important;
-      text-shadow: 0 0 20px rgba(132, 216, 174, 0.733);
+      color: #c079a2;
+      border-color: #c079a2;
+      background: rgba(192, 121, 162, 0.06);
     }
 
-    &:visited {
-      color: teal;
+    &:focus-visible {
+      outline: 2px solid teal;
+      outline-offset: 2px;
+    }
+  }
+
+  .primary {
+    background: #7b6cd9;
+    color: white;
+
+    &:hover {
+      color: white;
+      background: #c079a2;
+      border-color: #c079a2;
     }
   }
 }

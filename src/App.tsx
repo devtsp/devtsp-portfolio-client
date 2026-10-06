@@ -1,7 +1,7 @@
 import Contact from './modules/contact/Contact';
 import Projects from './modules/projects/Projects';
 import Stack from './modules/stack/Stack';
-import './App.module.css';
+import './App.css';
 
 function App() {
   return (
