@@ -63,15 +63,3 @@
     }
   }
 }
-
-.separator {
-  width: 70%;
-  margin: 2rem auto;
-  height: 0.4rem;
-  background: linear-gradient(
-    to right,
-    transparent,
-    lavenderblush 10% 90%,
-    transparent
-  );
-}

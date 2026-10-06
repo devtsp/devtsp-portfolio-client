@@ -21,11 +21,6 @@
   }
 }
 
-.project_title {
-  margin: 5px 0;
-  font-size: 20px;
-}
-
 .links {
   display: flex;
   justify-content: center;
@@ -44,10 +39,5 @@
     &:visited {
       color: teal;
     }
-  }
-
-  svg {
-    height: 16px;
-    transform: translateY(1px);
   }
 }
