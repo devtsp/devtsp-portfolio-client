@@ -1,6 +1,14 @@
 .container {
   text-align: center;
   line-height: 1.4;
+
+  p {
+    color: rgba(69, 69, 149, 0.486);
+    font-size: 22px;
+    text-align: center;
+    padding: 0 3rem;
+    margin-bottom: 40px;
+  }
 }
 
 .figuresContainer {
@@ -25,7 +33,7 @@
 
 .separator {
   width: 70%;
-  margin: 60px auto;
+  margin: 60px auto 30px;
   height: 0.4rem;
   background: linear-gradient(
     to right,

@@ -1,6 +1,18 @@
 .container {
-  margin: 80px auto 0;
+  margin: 10px auto 0;
   max-width: 1000px;
+
+  p {
+    color: rgba(69, 69, 149, 0.486);
+    font-size: 22px;
+    text-align: center;
+    padding: 0 3rem;
+    margin-bottom: 40px;
+
+    span {
+      color: black;
+    }
+  }
 
   ul {
     display: flex;

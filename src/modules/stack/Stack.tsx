@@ -6,6 +6,7 @@ const Stack = () => {
   return (
     <section className={styles.container}>
       <div className={styles.separator}></div>
+      <p>Tools I know how to use/build things with</p>
       <div className={styles.figuresContainer}>
         {stack.map(({ name, icon }) => (
           <div className={styles.figure} key={name}>
